@@ -4,10 +4,8 @@ import { ThemeContext } from "../../contexts/ThemeProvider";
 
 // Import local images
 import projectImage1 from "../../assets/images/logo.png";
-// import projectImage2 from "../assets/images/project2.png";
-// import projectImage3 from "../assets/images/project3.png";
-// import projectImage4 from "../assets/images/project4.png";
-// import projectImage5 from "../assets/images/project5.png";
+import daalBhat from "../../assets/images/Logodb.png";
+import headphone from "../../assets/images/Screenshot from 2024-09-15 15-57-19.png";
 
 const Projects: React.FC = () => {
   const theme = useContext(ThemeContext);
@@ -31,22 +29,24 @@ const Projects: React.FC = () => {
             description="Connect Heart is a React and Node.js app with TypeScript that offers user profiles, post sharing, likes, comments, and connection management. It features OTP verification, password updates, language toggling (English/Nepali), and dark/light themes. Real-time messaging and unread counts are supported with Socket.IO, and Google login is integrated for easy sign-in."
             imageSrc={projectImage1}
             link="#"
-            githubLink="https://github.com/username/project1"
-          />
-          {/* <Card
-            title="Project 2"
-            description="A brief description of Project 2."
-            imageSrc={projectImage2} // Use local image
-            link="#"
-            githubLink="https://github.com/username/project2"
+            githubLink="https://github.com/aayushbhattarai7/ConnectHeart-Backend"
           />
           <Card
-            title="Project 3"
-            description="A brief description of Project 3."
-            imageSrc={projectImage3} // Use local image
+            title="Food delivery app"
+            description="An online food ordering and delivery app designed specifically for a single restaurant, simplifying the ordering process for customers while helping the restaurant manage orders efficiently. Built using EJS for dynamic templating and CSS for styling, the app features a user-friendly interface that enhances the customer experience. The backend, powered by Node.js, ensures a robust system for handling orders and managing the restaurant’s operations smoothly. This solution streamlines the food ordering and delivery process, making it easier for both the restaurant and its customers."
+            imageSrc={daalBhat}
             link="#"
-            githubLink="https://github.com/username/project3"
+            githubLink="https://github.com/aayushbhattarai7/FoodDelivery"
           />
+
+          <Card
+            title="Headphone Ecommerce webapp"
+            description="I developed a responsive website specifically for selling headphones, making it easy for users to browse and purchase products. The site efficiently manages product listings, user accounts, and transactions, ensuring a smooth shopping experience for customers. I focused on enhancing performance and user satisfaction, ensuring that the website runs smoothly across different devices. The project was built using JSP and Java Servlets for handling the backend, with MySQL managing the database, providing a solid foundation for storing and retrieving product and user information."
+            imageSrc={headphone}
+            link="#"
+            githubLink="https://github.com/aayushbhattarai7/Headphone-Ecommerce"
+          />
+          {/*
           <Card
             title="Project 4"
             description="A brief description of Project 4."
@@ -62,26 +62,7 @@ const Projects: React.FC = () => {
             githubLink="https://github.com/username/project5"
           /> */}
         </div>
-        <div className="flex justify-center mt-8">
-          <a
-            href="/projects"
-            className="w-32 flex items-center py-4 px-4 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            Show More
-            <svg
-              className="ml-2 w-4 h-4"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              ></path>
-            </svg>
-          </a>
-        </div>
+      
       </div>
     </div>
   );

@@ -16,11 +16,11 @@ const Card: React.FC<CardProps> = ({
   githubLink,
 }) => {
   return (
-    <div className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105">
+    <div className="bg-white shadow-lg rounded-lg overflow-hidden w-full transition-transform transform hover:scale-105">
       <img
         src={imageSrc} 
         alt={title}
-        className="w-full h-48 object-cover"
+        className="w-full h-70 object-cover"
       />
       <div className="p-6">
         <h3 className="text-xl font-semibold mb-2">{title}</h3>
