@@ -3,7 +3,7 @@ import { techStack } from "../../constant/constants";
 import { ThemeContext } from "../../contexts/ThemeProvider";
 import { motion } from "framer-motion";
 import me from '../../assets/images/me.png'
-// import GitHubContributions from "../components/GitHubContributions"; // Uncomment if needed
+// import GitHubContributions from "../components/GitHubContributions";
 
 const About = () => {
   const theme = useContext(ThemeContext);

@@ -6,6 +6,8 @@ import { ThemeContext } from "../../contexts/ThemeProvider";
 import projectImage1 from "../../assets/images/logo.png";
 import daalBhat from "../../assets/images/Logodb.png";
 import headphone from "../../assets/images/Screenshot from 2024-09-15 15-57-19.png";
+import yatra from "../../assets/images/favicon.ico";
+import book from "../../assets/images/books.jpeg";
 
 const Projects: React.FC = () => {
   const theme = useContext(ThemeContext);
@@ -25,11 +27,25 @@ const Projects: React.FC = () => {
         </h4>
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <Card
+            title="Yatra: Eco-Tourism Platform"
+            description="Built a comprehensive eco-tourism web platform simulating real-world travel booking and coordination, with features like user authentication, trip planning, and itinerary management, using Node.js, React, PostgreSQL, and GraphQL for a seamless and efficient user experience."
+            imageSrc={yatra}
+            link="#"
+            githubLink="https://github.com/aayushbhattarai7/Yatra"
+          />
+          <Card
             title="Connect Heart Social Media app"
             description="Connect Heart is a React and Node.js app with TypeScript that offers user profiles, post sharing, likes, comments, and connection management. It features OTP verification, password updates, language toggling (English/Nepali), and dark/light themes. Real-time messaging and unread counts are supported with Socket.IO, and Google login is integrated for easy sign-in."
             imageSrc={projectImage1}
             link="#"
             githubLink="https://github.com/aayushbhattarai7/ConnectHeart-Backend"
+          />
+          <Card
+            title="Book Management System"
+            description="Developed a secure book management and e-commerce platform with user authentication, payment integration, and inventory management, using React for the frontend, ASP.NET Core for the backend, and PostgreSQL for database management."
+            imageSrc={book}
+            link="#"
+            githubLink="https://github.com/aayushbhattarai7/book-management-system"
           />
           <Card
             title="Food delivery app"
@@ -46,21 +62,6 @@ const Projects: React.FC = () => {
             link="#"
             githubLink="https://github.com/aayushbhattarai7/Headphone-Ecommerce"
           />
-          {/*
-          <Card
-            title="Project 4"
-            description="A brief description of Project 4."
-            imageSrc={projectImage4} // Use local image
-            link="#"
-            githubLink="https://github.com/username/project4"
-          />
-          <Card
-            title="Project 5"
-            description="A brief description of Project 5."
-            imageSrc={projectImage5} // Use local image
-            link="#"
-            githubLink="https://github.com/username/project5"
-          /> */}
         </div>
       
       </div>

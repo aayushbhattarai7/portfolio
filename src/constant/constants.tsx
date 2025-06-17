@@ -31,6 +31,10 @@ export const techStack = [
     link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
   },
   {
+    name: "GraphQL",
+    link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
+  },
+  {
     name: "Tailwind CSS",
     link: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
   },
